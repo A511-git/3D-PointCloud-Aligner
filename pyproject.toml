@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pointcloud-aligner"
+version = "0.1.0"
+description = "Modular Manhattan-World Point Cloud Aligner, Metric Scale Calibrator, and Floor Leveler for SpatialLM, SLAM, ScanNet, and ARKit."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+    { name = "Mohammad Atif" }
+]
+[project.urls]
+Homepage = "https://github.com/A511-git/3D-PointCloud-Aligner"
+Repository = "https://github.com/A511-git/3D-PointCloud-Aligner"
+keywords = [
+    "point-cloud",
+    "point-cloud-alignment",
+    "scannet",
+    "slam",
+    "manhattan-world",
+    "open3d",
+    "3d-reconstruction",
+    "lidar",
+    "arkit",
+    "spatiallm",
+    "computer-vision",
+    "depth-estimation"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+dependencies = [
+    "numpy>=1.24.0",
+    "open3d>=0.17.0",
+    "matplotlib>=3.7.0"
+]
+
+[project.scripts]
+pointcloud-align = "aligner.run:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*", "aligner*"]

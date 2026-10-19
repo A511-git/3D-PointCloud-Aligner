@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software in your research or applications, please cite it as below."
+title: "3D PointCloud Aligner: Modular Manhattan-World Alignment & Scale Calibration for Indoor 3D Scenes"
+authors:
+  - given-names: "Atif"
+    name-particle: "Mohammad"
+date-released: 2026-10-19
+version: "0.1.0"
+license: "MIT"
+url: "https://github.com/A511-git/3D-PointCloud-Aligner"
+repository-code: "https://github.com/A511-git/3D-PointCloud-Aligner"
+keywords:
+  - "point cloud"
+  - "point cloud alignment"
+  - "ScanNet"
+  - "SLAM"
+  - "Manhattan World"
+  - "Open3D"
+  - "SpatialLM"
+  - "3D indoor reconstruction"
